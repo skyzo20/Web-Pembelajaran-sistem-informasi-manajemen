@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran Sistem Informasi Manajemen - 14 Pertemuan</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #07aed0 100%); color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); overflow: hidden; }
+        header { background: #2c3e50; color: white; padding: 30px; text-align: center; }
+        header h1 { margin: 0; font-size: 2.5em; }
+        header p { margin: 10px 0 0; opacity: 0.9; }
+        .content { padding: 40px; }
+        .accordion { margin-bottom: 20px; }
+        .accordion-item { border: 1px solid #ddd; border-radius: 10px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .accordion-header { background: #3498db; color: white; padding: 20px; cursor: pointer; font-size: 1.3em; font-weight: bold; transition: background 0.3s; }
+        .accordion-header:hover { background: #039f4769; }
+        .accordion-content { max-height: 0; overflow: hidden; background: #f8f9fa; transition: max-height 0.4s ease-out; }
+        .accordion-content.active { max-height: 1000px; padding: 25px; }
+        .accordion-content h3 { color: #2c3e50; margin-top: 0; }
+        .accordion-content ul { padding-left: 25px; }
+        .accordion-content li { margin-bottom: 8px; }
+        footer { background: #34495e; color: white; text-align: center; padding: 20px; }
+        @media (max-width: 768px) { .content { padding: 20px; } header h1 { font-size: 2em; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖥️ Sistem Informasi Manajemen</h1>
+            <p>Mata Kuliah Semester Ganjil 2025/2026 | 14 Pertemuan Interaktif</p>
+        </header>
+        
+        <div class="content">
+            <h2 style="text-align: center; color: #2c3e50;">Pilih Pertemuan untuk Mulai Belajar</h2>
+            
+            <div class="accordion">
+                <!-- Pertemuan 1 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        📚 Pertemuan 1: Konsep Dasar Sistem Informasi
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Pendahuluan & Definisi Sistem</h3>
+                        <ul>
+                            <p> Pendekatan sistem berusaha menjelaskan sesuatu dipandang dari
+                                    sudut pandang tujuan, proses, dan struktur. Dengan memahami struktur
+sistem dan proses sistem, seseorang dapat menjelaskan tujuan suatu
+sistem tidak tercapai.
+Pendekatan sistem merupakan jumlah keseluruhan dari bagianbagian yang saling bekerja sama untuk mencapai hasil yang diharapkan
+berdasarkan kebutuhan tertentu.
+Pendekatan sistem merupakan suatu metode ilmiah, di mana proses
+pencapaian hasil atau tujuan logis dari pemecahan masalah dilakukan
+dengan cara yang efektif dan efisien. Menurut Reigeluth, pendekatan
+sistem adalah transaksi dari suatu urutan logis dari operasi untuk tujuan
+mengubah satu atau lebih faktor dalam suatu sistem. Penerapan
+pendekatan sistem ini dapat membantu mencapai suatu efek sinergitis
+di mana tindakan-tindakan berbagai bagian yang berbeda dari sistem
+tersebut jika dipersatukan akan memiliki dampak yang lebih besar
+daripada terpisah bagian demi bagian. Jadi, pendekatan sistem
+merupakan aplikasi pandangan sistem (system view or system thinking)
+dalam upaya memahami sesuatu atau 
+                            </p>
+
+<h3> Pengertian sistem </h3>
+<p> Kata sistem berasal dari bahasa Yunani, yaitu systema, yang artinya
+himpunan bagian atau komponen yang saling berhubungan secara
+teratur dan merupakan suatu keseluruhan. Selain itu, bisa diartikan
+sekelompok elemen yang independen, namun saling terkait sebagai satu
+kesatuan. Sistem terdiri atas struktur dan proses. Struktur sistem
+merupakan unsur-unsur yang membentuk sistem tersebut, sedangkan
+proses sistem menjelaskan cara kerja setiap unsur sistem dalam
+mencapai tujuan. Setiap sistem merupakan bagian dari sistem lain yang
+lebih besar dan terdiri atas berbagai sistem yang lebih kecil, yang disebut
+subsistem. Setiap sistem diciptakan untuk menangani sesuatu yang
+berulang-ulang atau yang secara rutin terjadi.
+Sistem adalah seperangkat unsur yang saling berhubungan dan saling
+memengaruhi dalam satu lingkungan tertentu (Ludwig, 1991). Sistem
+merupakan bagian-bagian yang beroperasi secara bersama-sama untuk
+mencapai beberapa tujuan (Gordon B. Davis, 1995). Sistem adalah
+sekelompok elemen yang terintegrasi untuk mencapai suatu tujuan
+(Raymond Mcleod, 2001).
+Menurut Budi Sutedjo (2002), sistem adalah kumpulan elemen yang
+saling berhubungan satu sama lain, yang membentuk satu kesatuan
+dalam usaha mencapai suatu tujuan.
+Menurut Fat (1967), sistem adalah himpunan suatu "benda" nyata atau
+abstrak (a set of thing) yang terdiri atas bagian-bagian atau komponenkomponen yang saling berkaitan, berhubungan, berketer-gantungan,
+saling mendukung, yang secara keseluruhan bersatu dalam satu kesatuan
+(unity) untuk mencapai tujuan tertentu secara efisien dan efektif.
+Indrajit (2001: 2) mengemukakan bahwa sistem mengandung arti
+kumpulan dari komponen yang dimiliki unsur keterkaitan antara satu
+dengan lainnya.
+Jogianto (2005: 2) mengemukakan bahwa sistem adalah kumpulan
+dari elemen yang berinteraksi untuk mencapai suatu tujuan tertentu.
+Sistem ini menggambarkan suatu kejadian dan kesatuan yang nyata,
+seperti tempat, benda, serta orang-orang yang ada dan terjadi.
+Menurut Murdick R.G. (1991: 27), sistem adalah seperangkat elemen
+yang membentuk kumpulan atau bagan-bagan pengolahan yang mencari
+suatu tujuan dengan mengoperasikan data dan/atau barang pada waktu
+tertentu untuk menghasilkan informasi.
+Menurut Jerry Futz Gerald (1981: 5), sistem adalah jaringan kerja dari
+prosedur-prosedur yang saling berhubungan, berkumpul bersama-sama
+untuk melakukan kegiatan atau untuk menyelesaikan sasaran tertentu.
+Menurut Davis G.B. (1991: 45), sistem secara fisik adalah kumpulan
+dari elemen yang beroperasi bersama-sama untuk me-nyelesaikan suatu
+sasaran.
+Definisi sistem menurut Harijono Djojodihardjo (1984: 78) adalah
+sekumpulan objek yang mencakup hubungan fungsional antara tiap-tiap
+objek dengan hubungan ciri tiap objek yang secara keseluruhan
+merupakan suatu kesatuan secara fungsional.   </p>
+
+                        </ul>
+                      
+                    </div>
+                </div>
+
+                <!-- Pertemuan 2 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        💻 Pertemuan 2: Sistem Informasi & CBIS
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Konsep Dasar Teknologi Informasi Manajemen (SIM)</h3>
+                        <ul>
+                            <h3> 1. Pengertian Teknologi informasi</h3>
+                            <p><ul>Teknologi informasi adalah studi atau peralatan elektronika, terutama
+komputer, untuk menyimpan, menganalisis, dan mendistribusikan
+informasi termasuk kata, bilangan, dan gambar (Kamus Oxford, 1995).
+Teknologi informasi adalah seperangkat alat untuk bekerja dengan
+informasi dan melaksanakan tugas-tugas yang berhubungan dengan
+pemrosesan informasi (Haag & Keen, 1996).
+Teknologi informasi tidak hanya terbatas pada teknologi komputer
+(software & hardware) yang digunakan untuk memproses atau
+menyimpan informasi, tetapi juga mencakup teknologi komunikasi untuk
+mengirimkan informasi (Martin, 1999).
+Teknologi informasi adalah segala bentuk teknologi yang diterapkan
+untuk memproses dan mengirimkan informasi dalam bentuk elektronis
+(Lucas, 2000).
+Teknologi informasi adalah teknologi yang menggabungkan
+komputasi (komputer) dengan jalur komunikasi berkecepatan tinggi yang
+membawa data, suara, dan video (William & Sawyer, 2003).
+Secara implisit dan eksplisit, teknologi informasi tidak hanya berupa
+teknologi komputer, tetapi juga mencakup teknologi komunikasi. Dengan
+kata lain, yang disebut teknologi informasi adalah gabungan antara
+teknologi komputer dan teknologi telekomunikasi</ul></p>
+<h3> 2. memahami konsep teknologi informasi </h3>
+<p><ul>Istilah teknologi informasi, information technology, atau IT mulai
+populer pada akhir dekade 70-an. Pada masa sebelumnya, istilah teknologi
+komputer, pengolahan data elektronis (PDE), atau electronic data
+processing (EDP) lebih dikenal.
+Istilah teknologi informasi mulai banyak digunakan untuk menggantikan sistem informasi manajemen. Istilah teknologi informasi (TI)
+lebih berorientasi ke teknologi. Teknologi informasi (TI) adalah sub-sistem
+atau sistem bagian dari sistem informasi.
+Istilah teknologi sistem informasi (TSI) atau information systems
+technology (IST) juga menunjukkan teknologi yang digunakan oleh sistem
+informasi. Istilah teknologi sistem informasi mempunyai arti yang mirip
+dengan teknologi informasi (TI) atau information technology (IT).
+Sistem komputer (computer system), pun merupakan teknologi
+informasi yang digunakan dalam sistem informasi. Teknologi informasi
+dapat berupa teknologi apa pun yang dapat menghasilkan informasi,
+termasuk teknologi komputer dan teknologi telekomunikasi. Dengan
+demikian, sistem komputer merupakan subsistem atau sistem bagian dari
+teknologi informasi.</ul></p>                            
+                            <h3>3. Pengelompokan Teknologi Informasi </h3>
+                            <p><ul>Teknologi informasi mencakup teknologi komputer dan teknologi
+komunikasi. Teknologi informasi dapat dikelompokkan masukan, teknologi perangkat lunak, teknologi penyimpanan,
+teknologi keluaran, dan teknologi mesin pemroses.</ul></p>
+<ul>
+<li>Teknologi mesin pemroses (processing machine) lebih dikenal dengan
+sebutan Central Processing Unit (CPU), mikroprosesor, atau prosesor.</li>
+<li> Teknologi penyimpanan dibedakan menjadi dua kelompok, yaitu
+memori internal dan penyimpanan eksternal. Memori internal (main
+memory atau memori utama) berfungsi sebagai pengikat sementara,
+baik bagi data, program, maupun informasi ketika proses
+pengolahannya dilaksanakan oleh CPU. Contoh memori internal, yaitu
+ROM dan RAM. Read Only Memory (ROM) adalah memori yang hanya
+dapat dibaca, sedangkan Read Access Memory (RAM) adalah memori
+yang isinya dapat diperbaharui.
+Penyimpanan eksternal (external storage) dikenal juga dengan
+sebutan penyimpanan sekunder. Penyimpanan eksternal adalah
+segala piranti yang berfungsi untuk menyimpan data secara
+permanen. Pengertian permanen di sini berarti data yang terdapat
+pada penyimpanan akan tetap terpelihara dengan baik walaupun
+komputer sudah dalam keadaan mati (tidak mendapat aliran listrik).
+Harddisk, disket, dan flashdisk adalah contoh penyimpanan eksternal.</li>
+</ul>   
+                    </ul>
+                    </div>
+                </div>
+
+                <!-- Pertemuan 3 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        🏢 Pertemuan 3: Konsep data,Data dan informasi
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Arti fakta dan Teori dalam sains</h3>
+                        <ul>
+                            <p> Arti Fakta dan Teori dalam Sains
+Kita sering membaca pernyataan atau mendengar orang berkata, "Ah,
+itu kan cuma teori," atau orang mengajukan tuntutan, "Mana faktanya?",
+atau orang mengucapkan kalimat, "Kalau cuma berteori, saya juga bisa,"
+atau "Saya berbicara berdasarkan fakta, bukan asal bunyi." Apa
+sesungguhnya makna kata teori dan/atau fakta dalam kalimat-kalimat
+tersebut? Tentu yang paling mengetahuinya adalah penuturnya sendiri.
+Akan tetapi, jika yang dimaksud dengan fakta dan/atau teori adalah seperti
+yang lazim berlaku di dunia sains, patut diduga bahwa si pengucapnya
+kurang memahami hakikat dan ruang lingkup pengetahuan ilmiah
+(scientific knowledge).
+Scientific knowledge dapat diartikan sebagai kesimpulan-kesimpulan
+ilmiah (hasil abstraksi) yang telah diuji dan mendapat pengakuan umum.
+Berdasarkan tingkat akurasi kesimpulannya, scientific knowledge dibedakan
+dalam lima kategori, fakta, konsep, prinsip, hukum, dan teor</p>    
+                        </ul>
+                        <h3>Pengertian Teori dan Fakta</h3>
+                        <ul>
+                            <p> Teori adalah sarana pokok untuk menyatakan hubungan sistematik
+dalam gejala sosial ataupun natura yang dijadikan pencermatan. Teori
+merupakan abstraksi dari pengertian atau hubungan dari proposisi atau
+dalil.
+Menurut Kerlinger   1973, teori dinyatakan sebagai sebuah set dari
+proposisi yang mengandung suatu pandangan sistematis dari fenomena.
+Terdapat tiga hal yang perlu diperhatikan dalam mencermati lebih
+jauh mengenai teori, yaitu:</p>
+                                <ul>
+                                    <li> teori adalah sebuah set proposisi yang terdiri atas konstrak (construct)
+yang sudah didefinisikan secara luas dan dengan hubungan unsurunsur dalam set tersebut secara jelas</li>
+                                    <li> teori menjelaskan hubungan antarvariabel atau antarkonstrak
+sehingga pandangan yang sistematik dari fenomena yang diterangkan
+oleh variabel dengan jelas terlihat.</li>
+                                    <li>  teori menerangkan fenomena dengan cara menspesifikasi variabel
+satu berhubungan dengan variabel yang lain.</li>
+                                </ul>
+                        </ul>
+                        <h3> Teori sebagai Alat Ilmu </h3>
+                        <ul>
+                        <p>Teori dinyatakan pula sebagai alat dari ilmu (tool of science), sedangkan
+perannya sebagai berikut.</p>
+                        <ul><li> Mendefinisikan orientasi utama dari ilmu dengan cara memberikan
+definisi terhadap jenis-jenis data yang akan dibuat</li>
+                             <li> Teori memberikan rencana konseptual, dengan rencana fenomenafenomena yang relevan disistematisasikan, diklasifikasikan, dan
+dihubung-hubungkan.</li>
+                                <li> Teori memberikan ringkasan terhadap fakta dalam bentuk
+generalisasi empiris dan sistem generalisasi.</li>
+                                    <li>Teori memberikan prediksi terhadap fakta.</li></ul>
+
+                    </div>
+                </div>
+
+                <!-- Pertemuan 4 -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        🔄 Pertemuan 4: Konsep sistem Informasi Manajemen
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Pengertian Sistem Informasi Manajemen</h3>
+                        <ul>
+                            <p> Menurut O'Brien (2002), sistem informasi manajemen adalah sistem
+terpadu yang menyediakan informasi untuk mendukung kegiatan
+operasional, manajemen, dan fungsi pengambilan keputusan dari suatu
+organisasi. Sistem informasi manajemen merupakan sistem informasi
+yang mendapatkan hasil keluaran (output) dengan menggunakan
+masukan (input) dan berbagai proses yang diperlukan untuk memenuhi
+tujuan tertentu dalam kegiatan manajemen (Wikipedia, 2010).
+Abdul Kadir (2002) mendefinisikan sistem informasi manajemen
+sebagai sistem informasi yang digunakan untuk menyajikan informasi
+yang digunakan untuk mendukung operasi, manajemen, dan pengambilan
+keputusan dalam sebuah organisasi.
+Beberapa ahli telah memberikan rumusan tentang sistem informasi
+manajemen, antara lain sebagai berikut.</p>
+</ul>
+                                <ul>
+                                    <li>Sistem informasi manajemen adalah pengembangan dan penggunaan
+sistem-sistem informasi yang efektif dalam organisasi (David Kroenke,
+1989).</li> 
+                                    <li>Sistem informasi manajemen didefinisikan sebagai suatu sistem
+berbasis komputer yang menyediakan informasi bagi beberapa
+pemakai yang mempunyai kebutuhan serupa. Informasi menjelaskan
+perusahaan atau salah satu sistem utamanya mengenai apa yang telah
+terjadi pada masa lalu, yang sedang terjadi sekarang, dan yang
+mungkin terjadi di masa depan. Informasi tersebut tersedia dalam
+bentuk laporan periodik, laporan khusus, dan output dari simulasi
+</li>
+                            <li>Sistem informasi manajemen merupakan metode formal yang menyediakan informasi yang akurat dan tepat waktu pada manajemen
+untuk mempermudah proses pengambilan keputusan dan membuat
+organisasi dapat melakukan fungsi perencanaan, operasi secara
+efektif dan pengendalian (Stoner, 1996)</li>
+</ul>
+    <h3>Batasan Sistem Informasi Manajemen</h3>                            
+<ul>
+    <p>Sistem informasi manajemen (management information system atau
+MIS) merupakan penerapan sistem informasi dalam organisasi untuk
+mendukung informasi-informasi yang dibutuhkan oleh semua tingkatan
+manajemen.
+Sistem informasi manajemen dapat didefinisikan sebagai kumpulan
+dari interaksi sistem-sistem informasi yang bertanggung jawab
+mengumpulkan dan mengolah data untuk menyediakan informasi yang
+berguna untuk semua tingkatan manajemen dalam kegiatan perencanaan
+dan pengendalian.
+Secara teori, komputer tidak harus digunakan dalam sistem informasi
+manajemen. Akan tetapi, kenyataannya sistem informasi manajemen tidak
+mungkin dapat berfungsi tanpa melibatkan elemen komputer. Sistem
+informasi manajemen selalu berhubungan dengan pengolahan informasi
+yang didasarkan pada komputer (computer-based information processing).
+Sistem informasi manajemen merupakan kumpulan dari sistem
+informasi dan bergantung pada besar kecilnya organisasi yang terdiri atas
+sistem-sistem informasi sebagai berikut</p>
+</ul>
+
+<ul>
+<li>Sistem informasi akuntansi (accounting information system),
+menyediakan informasi dari transaksi keuangan.</li>
+<li>Sistem informasi pemasaran (marketing information system),
+menyediakan informasi untuk penjualan, promosi penjualan, kegiatan
+pemasaran, kegiatan penelitian pasar, dan sebagainya yang berhubungan dengan pemasaran.</li>
+<li>Sistem informasi manajemen persediaan (inventory management
+information system).</li>
+<li>Sistem informasi personalia (personnel information systems)</li>
+<li> Sistem informasi distribusi (distribution information systems)</li>
+</ul>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pertemuan 5-14: Ringkasan standar kurikulum SIM -->
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        📊 Pertemuan 5: Konsep Dasar Manajemen dalam Sistem Informasi Manajemen
+                    </div>
+                    <div class="accordion-content">
+                        <h3>PengertianManajemen</h3>
+                        <ul>
+                            <p>Pengertian manajemen sangat banyak dan satu pengertian tentang
+manajemen tidak dapat mewakili pengertian lain secara universal.
+Menurut T. Hani Handoko (1997), tidak ada definisi manajemen yang dapat
+diterima secara universal. Mary Parker Follet ( Tohirin, 2008: 271)
+mengatakan bahwa manajemen merupakan seni menyelesaikan
+pekerjaan melalui orang lain. Menurut Stephen P. Robbins dan Mary
+Coulter (2004), manajemen adalah proses pengoordinasian kegiatankegiatan pekerjaan sehingga pekerjaan tersebut terselesaikan secara
+efektif, efisien, dan melalui orang lain.
+Menurut Stoner (Tohirin, 2008: 272), manajemen adalah proses
+perencanaan, pengorganisasian, pengarahan, dan pengawasan usahausaha anggota organisasi dan penggunaan sumber daya organisasi lainnya
+agar mencapai tujuan organisasi yang telah ditetapkan.
+Pengertian yang tidak jauh berbeda dikemukakan oleh Ismail Solihin
+(2009), yakni manajemen adalah proses perencanaan, pengorganisasian,
+kepemimpinan, dan pengendalian dari berbagai sumber daya organisasi
+untuk mencapai tujuan secara efektif dan efisien.
+Definisi tersebut dapat dijelaskan sebagai berikut:</p>
+                                <ul>
+                            <li>Manajemen merupakan sebuah proses. Artinya, seluruh kegiatan
+manajemen yang dijabarkan ke dalam empat fungsi manajemen
+dilakukan secara berkesinambungan dan semuanya bermuara pada
+pencapaian tujuan</li>
+                            <li>Pencapaian tujuan dilakukan melalui serangkaian aktivitas yang
+dikelompokkan ke dalam fungsi-fungsi manajemen dan mencakup
+fungsi perencanaan, pengorganisasian, pelaksanaan, dan pengendalian.</li>
+                                <li>Pencapaian tujuan dilakukan secara efektif dan efisien. Efektivitas
+merujuk pada serangkaian kegiatan yang dilakukan untuk mencapai
+tujuan. Adapun efisiensi menunjukkan pencapaian tujuan secara
+optimal dengan menggunakan sumber daya yang paling minimal</li>
+<li>Pencapaian tujuan perusahaan dilakukan dengan memanfaatkan
+sumber daya organisasi.
+Dalam konteks ini manajemen berarti proses perencanaan,
+pengorganisasian, pengarahan, dan pengawasan aktivitas-aktivitas
+pelayanan bimbingan dan konseling serta penggunaan sumber daya
+lainnya untuk mencapai tujuan yang telah ditetapkan.</li>
+                                </ul>
+              <h3>Prinsip-prinsip Manajemen</h3>
+                                <p>Agar proses manajemen dapat berhasil dengan baik, harus ada syaratsyarat manajemen yang harus dipenuhi, yaitu</p>
+                                <ul>
+                                    <li> ada pembagian kerja, mengandung pengertian bahwa suatu
+pekerjaan itu apabila dibagi sesuai dengan bakat dan kemampuan
+anggota organisasi, akan lebih berhasil jika dibandingkan dengan tidak
+adanya pembagian kerja;</li>
+                                    <li> kekuasaan dan pertanggungjawaban, dalam sebuah organisasi harus
+ada kejelasan tentang kekuasaan dan pertanggungjawaban antara
+masing-masing staf dalam organisasi;</li>
+                                    <li>  disiplin, semua lini dalam sebuah organisasi harus disiplin dengan
+menaati peraturan yang ditetapkan;</li>
+                                    <li>kesatuan komando diperlukan untuk menjaga kesimpangsiuran
+perintah dalam organisasi karena organisasi mempunyai tujuan yang
+sama.</li> 
+<li> kesatuan arah diperlukan untuk menghindari setiap anggota memiliki
+tujuan masing-masing. Perintah hanya datang dari satu orang;</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        ⛓️ Pertemuan 6: Konsep Organisasi dalam Sistem Informasi Manajemen
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Pengertian Organisasi</h3>
+                        <p>James L. Gibson et.al. dalam Winardi (2003) menyatakan bahwa
+"….Organisasi-organisasi merupakan entitas-entitas yang memungkinkan
+masyarakat mencapai hasil-hasil tertentu, yang tidak mungkin dilaksanakan oleh individu-individu yang bertindak secara sendiri."
+Menurut Winardi (2003):
+"Organisasi adalah sebuah sistem yang terdiri atas aneka macam
+elemen atau subsistem, di antara mana subsistem manusia
+mungkin merupakan subsistem terpenting, dan di mana terlihat
+bahwa masing-masing subsistem saling berinteraksi dalam
+upaya mencapai sasaran-sasaran atau tujuan-tujuan organisasi
+yang bersangkutan".
+Organisasi adalah wadah yang memungkinkan masyarakat dapat
+meraih hasil yang sebelumnya tidak dapat dicapai oleh individu secara
+sendiri-sendiri. Organisasi merupakan suatu unit terkoordinasi yang
+terdiri atas setidaknya dua orang, berfungsi mencapai satu sasaran
+tertentu atau serangkaian sasaran (Rivai, 2007: 188).
+Definisi berikut tentang perorganisasian memberi kita sebuah
+gambaran pendahuluan tentang makna kata tersebut: "…….. Organizing
+... the function of gathering resources, allocating resources, and structuring
+task to fulfill organizational plans" (Winardi, 2003: 20).
+Organisasi pelayanan bimbingan dan konseling terentang vertikal, dari
+para pengambil kebijaksanaan yang paling tinggi sampai pada pelaksana
+dan pembantu pelaksana terbawah dan secara horizontal yang mencakupberbagai pihak yang dapat memberikan kemudahan bagi pelaksanaan
+pelayanan bimbingan dan konseling yang mantap dan berkelanjutan.</p>
+                        <h3>unsur-unsur organisasi</h3>
+                        <p>Menurut Prayitno (1997: 49), organisasi yang mencakup unsur-unsur
+vertikal dan horizontal dikehendaki berbagai tuntutan:</p>
+                        <ul>
+                            <li>menyeluruh, yaitu mencakup unsur-unsur penting, baik vertikal
+maupun horizontal, sehingga mampu sebesar-besarnya memadukan
+berbagai kebijaksanaan dan pelaksanaannya, serta berbagai sumber
+yang berguna bagi pelayanan bimbingan dan konseling;</li>
+                            <li> sederhana, sehingga jarak antara penetapan kebijaksanaan dan upaya
+pelaksanaannya tidak terlalu panjang. Keputusan dapat dengan cepat
+diambil, tetapi dengan pertimbangan yang cermat dan pelaksanaan
+layanan/kegiatan bimbingan dan konseling terhindar dari urusan
+birokrasi yang tidak perlu;</li>
+                            <li>luwes dan terbuka, sehingga mudah menerima masukan dan upaya
+pengembangan yang berguna bagi pelaksanaan tugas-tugas
+organisasi, yang semuanya itu bermuara pada kepentingan seluruh
+organisasi atau perusahaan;</li>
+<li>menjamin berlangsungnya kerja sama, sehingga semua unsur dapat
+saling menunjang dan semua upaya serta sumber dapat dikoordinasikan demi kelancaran dan keberhasilan pelayanan bimbingan
+dan konseling untuk kepentingan organisasi atau perusahaan;</li>
+                        </ul>
+                        <h3>tujuan organisasi</h3>
+                        <p> Tujuan organisaasi yaitu :</p>
+                        <ul>
+                            <li>keuntungan adalah kekuatan motivasi bagi wiraswastawan;</li>
+                            <li>pelayanan pada pelanggan dengan penyediaan nilai ekonomis yang
+dibutuhkan (barang dan jasa) membenarkan keberadaan organisasi
+bisnis;</li>
+<li>tanggung jawab sosial bagi wiraswastawan sesuai dengan kode etik
+dan moral yang dibuat oleh masyarakat tempat industri tersebut
+berada.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        👥 Pertemuan 7: Konsep pengambilan keputusan Berbasis Sistem informasi
+                    </div>
+                    <div class="accordion-content">
+                      <h3>Pengertian Pengambilan Keputusan</h3>
+                     <ul> <p>Menurut Siagian (1999), pengambilan keputusan adalah suatu
+pendekatan terhadap hakikat masalah, pengumpulan fakta dan data,
+penentuan yang matang dari alternatif yang dihadapi dan pengambilan
+tindakan yang menurut perhitungan merupakan tindakan yang paling
+tepat.
+Menurut Terry (Ibnu Syamsi, 1995: 5), pengambilan keputusan adalah
+tindakan pimpinan untuk memecahkan masalah yang dihadapi dalam
+organisasi yang dipimpinnya dengan melalui pemilihan satu di antara
+alternatif-alternatif yang dimungkinkan. Hakikatnya pembuatan
+keputusan adalah suatu pendekatan yang sistematis terhadap hakikat
+alternatif yang dihadapi dan mengambil tindakan yang tepat.
+Menurut Redford (1981: 11), pengambilan keputusan merupakan
+proses yang mencakup beberapa tahap yang saling terjalin, bukan
+merupakan suatu perbuatan yang terpisah. Intinya, pengambilan
+keputusan berkaitan dengan proses yang merupakan langkah dari
+pengambilan keputusan.
+Pada hakikatnya, pengambilan keputusan adalah suatu pendekatan
+yang sistematis terhadap hakikat suatu masalah, pengumpulan fakta dan
+data, penentuan yang matang dari alternatif yang dihasilkan dan
+mengambil tindakan yang menurut perhitungan merupakan tindakan
+yang paling tepat. Dengan perkataan lain, pengambilan keputusan adalah
+suatu teknik untuk memecahkan masalah dengan menggunakan teknikteknik ilmiah.</p></ul>
+                       <h3>Teknik Pengambilan Keputusan</h3>
+                       <P>Herbert A. Simon (Tata Sutabri, 2005: 135) mengemukakan teknik
+tradisional dan modern dalam pembuatan keputusan yang diprogram dan
+tidak diprogram. Dengan berkembangnya teknik pembuatan keputusan,
+efisiensi pemecahan Model yang bermanfaat dan terkenal sebagai kerangka dasar proses
+pengambilan keputusan yang berhubungan dengan sistem informasi
+manajemen dikemukakan oleh Herbert A. Simon (1973), terdiri atas tiga
+tahap, yaitu sebagai berikut:
+                       </P>
+                       <ul>
+                        <h3>A.Pemahaman</h3>
+                        <p>Proses penyelidikan mengandung pemeriksaan data, baik dengan
+cara yang telah ditentukan maupun dengan cara khusus. Sistem informasi
+harus meneliti semua data dan mengajukan permintaan untuk diuji
+mengenai situasi yang jelas menurut perhatian. Baik sistem informasi
+manajemen maupun organisasi harus menyediakan saluran komunikasi
+untuk masalah yang diketahui dengan jelas agar masalah tersebut dapat
+ditangani</p>
+<h3>B.Perancangan</h3>
+<p>Sistem informasi manajemen harus mengandung model keputusan untuk mengelolah data memprakasai pemecahan alternatif</p>
+                            <li>Pengetahuan tacit vs explicit</li>
+                            <li>Sistem manajemen pengetahuan</li>
+                            <li>Best practices KWS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        📈 Pertemuan 8: Konsep Teknologi dan Sistem informasi untuk Sistem Informasi manajemen
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <h3> Pengertian Teknologi Informasi </h3>
+                           <ul>
+                            <p>Isi dari ilmu tersebut dapat berupa
+teknik-teknik dan prosedur untuk menyimpan informasi secara efisien dan
+efektif. Informasi dapat dikatakan sebagai data yang telah diolah. Informasi
+tersebut dapat disimpan dalam bentuk tulisan, suara, gambar, gambar
+mati, ataupun gambar hidup.
+Apabila informasi tersebut volumenya kecil, tentunya tidak perlu
+teknik-teknik atau prosedur yang rumit untuk menyimpannya. Apabila
+informasi tersebut dalam volume yang besar, diperlukan teknik dan
+prosedur tertentu untuk menyimpannya agar mudah mencari informasi
+yang tersimpan. Komputer mempunyai kapasitas untuk menyimpan
+informasi dalam volume besar. Pada awalnya, komputer hanya mampu
+menyimpan teks dan grafik sederhana. Saat ini, komputer mampu
+menyimpan informasi dalam bentuk audio, visual, dan audio visual.
+Menurut Kamus Oxford (1995), teknologi informasi adalah studi atau
+penggunaan peralatan elektronika, terutama komputer untuk
+menyimpan, menganalisis, dan mendistribusikan informasi, termasuk kata,
+bilangan, dan gambar. Menurut Alter (1992), teknologi informasi
+mencakup perangkat keras dan perangkat lunak untuk melaksanakan satu
+atau sejumlah tugas pemrosesan data, seperti menangkap mentransmisikan,
+menyimpan, mengambil, memanipulasi, atau menampilkan data.
+Lebih lanjut, menurut Martin (1999), teknologi informasi tidak hanya
+terbatas pada teknologi komputer yang digunakan untuk memproses dan
+menyimpan informasi, tetapi mencakup juga teknologi komunikasi untuk
+mengirimkan informasi.</p> 
+</ul>
+<h3> Lingkup Teknologi Informasi </h3>
+<ul>
+    <p> Secara umum teknologi informasi selalu berkaitan dengan dua aspek,
+yaitu perangkat keras dan perangkat lunak. Perangkat keras (hardware)
+menyangkut peralatan bersifat fisik, seperti memory, monitor, keyboard,
+CPU, mouse, dan lain-lain. Adapun perangkat lunak (software) berkaitan
+dengan instruksi-instruksi untuk mengatur perangkat keras agar bekerja
+sesuai dengan tujuan instruksi tersebut.
+Teknologi informasi terdiri atas enam bagian, yaitu teknologi masukan
+(input technology); teknologi keluaran (output technology); teknologi
+penyimpan (storage technology); teknologi komunikasi (communication
+technology); mesin pemproses (processing machine) atau CPU.</p>
+</ul>
+<h3> Pengertian Sistem Informasi </h3>
+<ul>
+    <p>Sistem informasi adalah sekumpulan hardware, software, brainware,
+prosedur, dan/atau aturan yang diorganisasikan secara integral untuk
+mengolah data menjadi informasi yang bermanfaat guna memecahkan
+masalah dan pengambilan keputusan. Sistem informasi adalah satu kesatuan data olahan yang terintegrasi dan saling melengkapi yang menghasilkan data olahan, baik dalam bentuk gambar, suara maupun tulisan.
+Sistem informasi adalah sekumpulan komponen pembentuk sistem
+yang memiliki keterkaitan antara satu komponen dan komponen lain yang
+bertujuan menghasilkan informasi dalam bidang tertentu.
+Suatu sistem informasi merupakan aransemen dari orang, data, proses,
+dan antarmuka yang berinteraksi, mendukung, dan memperbaiki
+beberapa operasi sehari-hari dalam suatu bisnis, termasuk mendukung
+memecahkan soal dan kebutuhan pembuat keputusan manajemen dan
+para pengguna. Pada suatu organisasi, informasi merupakan sesuatu yang
+penting dalam mendukung proses pengambilan keputusan oleh pihak
+manajemen.
+Pengertian sistem informasi menurut Henry Lucas (1996) adalah
+kegiatan dari prosedur-prosedur yang diorganisasikan, apabila dieksekusi
+akan menyediakan informasi untuk mendukung pengambilan keputusan
+dan pengendalian dalam organisasi.</p> </ul>
+<ul>
+    <p> jenis-jenis sistem informasi,yaitu</p>
+                            <li>Transaction Processing Systems (TPS);</li>
+                            <li>Office Automation Systems (OAS) dan Knowledge Work Systems;</li>
+                            <li>Sistem Informasi Manajemen (SIM);</li>
+                            <li>Decision Support Systems (DSS);</li>
+                            <li> Sistem Ahli (ES) dan Kecerdasan Buatan (AI);</li>
+
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        🔒 Pertemuan 9: Aplikasi Sistem Informasi pada fungsi dan level Organisasi
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <h3>Sistem pengelolaan transaksi</h3>
+                            <p>Sistem ini menangkap transaksi-transaksi bisnis yang terjadi,
+mencatatnya dalam dokumen-dokumen dasar, memasukkannya ke dalam
+sistem informasi, merekamnya ke basis data, dan mengolahnya menjadi
+informasi-informasi pencatatan nilai.
+Laporan-laporan yang berisi informasi pencatatan nilai digunakan
+oleh orang-orang yang terlibat di transaksinya (misal: pelanggan yang
+menerima faktur karena pemesanan barang); manajer level bawah yang
+menggunakan informasi ini untuk pengendalian operasi (misal: mandor
+untuk mengontrol karyawan yang tidak masuk); stakeholder yang meminta
+pertanggungjawaban manajer</p>
+                            <h3>Sistem informasi Fungsional</h3>
+                            <p>Sistem informasi fungsional dimaksudkan untuk menyediakan informasi
+kepada manajer-manajer fungsi. Misalnya, sistem informasi pemasaran
+merupakan sistem informasi yang diterapkan di fungsi pemasaran untuk
+menyediakan informasi bagi manajer-manajer di fungsi pemasaran untuk
+semua tingkatan manajemen, yaitu manajer bawah, menengah, dan atas.
+Sistem informasi di fungsi-fungsi organisasi yang memanfaatkan basis
+data SPT untuk laporan manajemen disebut dengan sistem informasi
+fungsional atau sistem informasi bisnis, yang terdiri atas sistem informasi
+akuntansi, sistem keuangan, sistem informasi pemasaran, sistem informasi
+produksi, dan sistem informasi sumber daya manusia.</p>
+                            <h3>Sistem Pakar (Expert Systems)</h3>
+                            <p>Sistem pakar adalah suatu sistem untuk mengadopsi pengetahuan
+yang dimiliki manusia ke komputer yang dirancang untuk memaksimalkan kemampuan dalam menyelesaikan masalah, seperti
+layaknya seorang pakar atau orang yang telah terbiasa menghadapi
+masalah.
+Dengan sistem pakar, orang awam dapat menyelesaikan masalahnya
+atau mencari suatu informasi berkualitas yang sebenarnya hanya dapat
+diperoleh dengan bantuan para ahli di bidangnya.
+Dalam penyusunannya, sistem pakar mengombinasikan kaidahkaidah penarikan kesimpulan (inference rules) dengan basis pengetahuan
+tertentu yang diberikan oleh satu atau lebih pakar dalam bidang tertentu</p>
+                        <p>a. Ciri-ciri Sistem Pakar
+Suatu sistem pakar yang baik harus memenuhi ciri-ciri berikut:</p>  
+                        <ul>
+                            <li>memiliki informasi yang andal;</li>
+                            <li>mudah dimodifikasi;</li>
+                            <li>dapat digunakan dalam berbagai jenis komputer;</li>
+                            <li>memiliki kemampuan untuk belajar beradaptasi.</li>
+                          </ul>
+                       <p>b. Manfaat Sistem Pakar Secara garis besar, manfaat yang dapat diambil dengan adanya sistem
+pakar, antara lain: </p>
+                       <ul>
+                            <li>memungkinkan orang awam dapat mengerjakan pekerjaan para ahli;</li>
+                            <li> dapat melakukan proses secara berulang secara otomatis;</li>
+                            <li> menyimpan pengetahuan dan keahlian para pakar;</li>
+                            <li>meningkatkan output dan produktivitas;</li>
+                       </ul>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        🌐 Pertemuan 10: Sistem Informasi Strategis dan sistem Antaraorganisasi
+                    </div>
+                    <div class="accordion-content">
+                        <h3>Sistem informasi strategis</h3>
+                        <p>Menurut Martin (1994), sistem informasi strategis adalah alat untuk
+mengimplementasikan strategi dengan menggunakan informasi,
+pengolahan informasi, dan komunikasi informasi.
+Menurut Laudon (1997), sistem informasi strategis adalah sistem
+komputer yang digunakan pada setiap tingkatan organisasi yang
+mengubah tujuan operasional, produk jasa, dan hubungan lingkungan
+untuk membantu organisasi memperoleh keunggulan kompetitif.
+Sistem informasi dapat dipandang secara strategis, yaitu sebagai,
+jaringan kompetitif vital (pembaharuan organisasi) dan investasi teknologi
+untuk membantu mencapai tujuan.
+Sistem informasi strategis (SIS) adalah dukungan terhadap sistem yang
+ada dan membantu dalam mencapai keunggulan kompetitif atas pesaing
+organisasi dalam hal tujuan. Sistem informasi dapat memengaruhi aktivitas bisnis perusahaan secara keseluruhan sehingga dapat membantu perusahaan dalam persaingan bisnis dengan perusahaan lainnya Peranan strategis sistem informasi, yaitu:</p>
+                        <ul>
+                            <li> menggunakan teknologi informasi untuk menghasilkan produk,
+layanan;</li>
+                            <li>meningkatkan kemampuan perusahaan dalam mencapai keunggulan
+kompetitifnya;</li>
+                            <li> membantu perusahaan dalam menghadapi pasar global.</li>
+                        </ul>
+                        <h3> Kriteria Penerapan Sistem informasi Straregis</h3>
+                        <p>Menurut Rahadian (2011), penerapan sistem informasi dikatakan
+strategis jika tujuannya memenuhi kriteria berikut:</p>
+                        <ul>
+                            <li>Mencapai posisi kepemimpinan biaya yang rendah.</li>
+                            <li>menyediakan diferensiasi produk/jasa dan nilai konsumen yang lebih besar</li>
+                            <li>  Menciptakan aliansi antara perusahaan dengan pemasok dan
+pelanggannya, sehingga mengurangi biaya untuk pemasok dan
+menyediakan dukungan khusus bagi pelanggannya.</li>
+                        <li>Mempertinggi nilai suatu produk/jasa dengan menyediakan tampilan
+atau dukungan yang inovatif.</li>
+                        </ul>
+                        <h3> Faktor Pendukung Dan penghambat penerapaan sistem Informasi strategis</h3>
+                         <p>Beberapa faktor yang dapat mendukung kesuksesan penerapan SIS,
+antara lain:</p>
+                        <ul>
+                            <li>  organisasi harus memiliki visi information technology;</li>
+                            <li> dukungan penuh dari manajemen puncak;</li>
+                            <li> dalam menerapkan SIS, organisasi harus fokus pada kebutuhan bisnis;</li>
+                            <li>  kreatif menarik jangkauan dan lingkupan</li>
+                        </ul>
+                        <h3> Pengaruh Penerapan Sistem Informasi Strategis</h3>
+                        <p> ada dua macam pengaruh penerapan sistem informasi strategis, yaitu:</p>
+                        <ul>
+                            <li> a. Pengaruh Bersaing </li>
+                            <p> Pengaruh bersaing adalahpengaruh secara langsung berdampak
+pada kemampuan bersaing. Pengaruh ini mampu menciptakan aliansi
+dengan pelanggan, yang dapat menimbulkan biaya bagi pelanggan untuk
+berpaling ke pesaing atau menimbulkan biaya bagi pesaing baru untuk
+masuk pasar.
+Berikut beberapa pengaruh bersaing dalam sistem informasi
+strategis, yaitu: siklus perkembangan produk; memperkuat kualitas produk;
+kelompok penjualan dan dukungan penjualan; otomatisasi siklus pesanan;
+pengurangan biaya kantor; manajemen saluran produk dan persediaan;
+pengurangan level management; penguatan tampilan produk dan
+ancaman terhadap produk pengganti.</p>
+            
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        ⚙️ Pertemuan 11: Aplikasi Sistem informasi pendukung dalam Sistem Informasi Manajemen
+                    </div>
+                    <div class="accordion-content">
+                      <h3>Hakikat Sistem Informasi Pendukung Manajemen</h3>
+                      <p>Aktivitas penting yang menunjang keberhasilan atau malah
+kegagalan berlaku bagi semua organisasi. Aktivitas-aktivitas penting
+tersebut adalah Critical Success Factor (CSF), dan faktor ini dapat berbedabeda dari satu jenis organisasi ke jenis organisasi yang lain.
+Ketika manajemen perusahaan menjalankan konsep tentang CSF,
+mereka akan memusatkan perhatian pada pengidentifikasian CSF,
+kemudian memonitor sampai seberapa jauh mereka mencapainya.
+Sistem Pendukung Manajemen (MSS) adalah kumpulan teknologi
+komputer yang mendukung pekerjaan manajerial, khususnya pengambilan
+keputusan. Sistem pendukung manajemen atau management support system (MSS) memiliki banyak jenis. Dalam hal ini, keseluruhannya
+dianggap sebagai MSS. Dengan asumsi tersebut, transaction processing
+system (TPS), office automation (OA), decision support system (DSS), dan
+executive support system (ESS) adalah elemen MSS yang akan lebih
+menunjang existensi dari sistem informasi manajemen.</p>
+
+                        <ul>
+                            <p>Dalam sistem pendukung manajemen dibagi menjadi:</p>
+                            <li>accounting information system;</li>
+                            <li>finance information system;</li>
+                            <li>marketing information system;</li>
+                            <li>production information system;</li>
+                            <li>personal information system;</li>
+                        </ul>
+                    <h3>Sistem Pendukung Manajemen</h3>
+                    <ul>
+                        <li>1. Batch processing: data yang diperoleh dari sumber data biasanya
+dikumpulkan atau ditumpuk, lalu diproses pada waktu tertentu,
+misalnya data dikumpulkan antara pukul 08.00 sampai dengan pukul
+12.00, kemudian diproses mulai pukul 14.00 sampai dengan pukul
+17.00.</li>
+<li>2. online Processing: data yang  diperoleh dari sumber data langsung di proses pada saat diterima yang mungkin terjadi adalah antrean data untuk menunggu giliran,msisalnya pemrosesan yang dilakukan pada saat melakukan transaksi online di depan teller bank</li>
+<li>3. Real-time processing: pemrosesan data tidak boleh ditunda karena
+waktu sangat kritis. Penundaan pengolahan dapat mengakibatkan
+sesuatu yang fatal. Misalnya pengolahan data hasil pemantauan
+aktivitas gunung berapi.</li>
+<li>4.Inline processing: disebut juga hybrid-processing, yaitu kombinasi
+antara batch-processing dan online-processing. Misalnya pengolahan
+transaksi di supermarket, tempat transaksi penjualan melalui POS
+(point of sale) langsung dilakukan (online), tetapi pengolahan lebih
+lanjut tentang persediaan barang dilakukan setiap pukul 10.00
+malam.</li>
+
+                    </ul>
+
+                    </p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        💾 Pertemuan 12: Database dan Sitem Manajemen Basis Database
+                    </div>
+                    <div class="accordion-content">
+                       <h3>Epistemologi Database</h3>
+                       <p>Menurut Raymon McLeod, Jr. (2001), data adalah sekumpulan baris
+fakta yang mewakili peristiwa yang terjadi pada organisasi atau pada
+lingkungan fisik sebelum diolah ke dalam format yang bisa dimengerti
+dan digunakan manusia.
+Data diambil dari bahasa Latin, yang artinya "memberi". Data adalah
+fakta yang diberikan, (C.J. Date, 2004). Menurut Kenneth C. Laudon dan
+Jane P. Louden (1973), data adalah kumpulan fakta kasar yang
+menunjukkan kejadian yang terjadi dalam organisasi atau lingkungan fisik
+sebelum fakta tersebut diolah dan ditata menjadi bentuk yang dapat
+dipahami.
+Basis data dapat didefinisikan sebagai kumpulan file yang saling
+berelasi, relasi tersebut ditunjukkan dengan kunci dari tiap file yang ada untuk digunakan dalam satu lingkup perusahaan atau instansi (Kristanto,
+1994)</p>
+<p>b. Pengertian Database
+Database adalah kumpulan informasi yang disimpan dalam
+komputer secara sistematik untuk memperoleh informasi dari basis data.
+Database adalah representasi kumpulan fakta yang saling berhubungan
+disimpan secara bersama, untuk memenuhi berbagai kebutuhan.
+Database merupakan sekumpulan informasi yang saling berkaitan
+pada suatu subjek tertentu untuk tujuan tertentu pula. Database adalah
+susunan record data operasional lengkap dari suatu organisasi atau
+perusahaan, yang diorganisasi dan disimpan secara terintegrasi dengan
+menggunakan metode tertentu sehingga mampu memenuhi informasi
+yang optimal yang dibutuhkan oleh para pengguna.
+Istilah "database" berawal dari ilmu komputer, kemudian artinya
+semakin luas, memasukkan hal-hal yang di luar bidang elektronika. Catatan
+yang mirip dengan database sebenarnya sudah ada sebelum revolusi
+industri, yaitu dalam bentuk buku besar, kuitansi, dan kumpulan data yang
+berhubungan dengan bisnis</p>
+                       <h3>Karakteristik Database</h3>
+                       <p>Karakteristik database dalam Database Management System (DBMS)
+memiliki tiga karakteristik utama, yaitu:</p>
+                        <ul>
+                            <li>Data yang sama dapat diakses secara serempak oleh beberapa
+pengguna untuk berbagai kegunaan yang berbeda.</li>
+                            <li>Data tidak bergantung pada struktur penyimpanan atau cara
+membaca data dari program aplikasi, atau data bersifat transparan
+terhadap program aplikasi.</li>
+                            <li>Data memiliki integritas (akurasi dan validasi) yang terkendali.
+Strategi akses terhadap data yang bersifat logis menyebabkan
+database berbeda dari file-file komputer yang lain. Aplikasi sangat
+bergantung pada struktur data yang dimiliki oleh database. Oleh karena
+itu, aplikasi tidak mengetahui cara data disimpan pada database.
+Database memiliki sifat terbebaskan dari keadaan fisik data yang dapat
+menyebabkan database mengembang ukurannya, tetapi hal tersebut
+dapat mudah diatasi dengan cara dipindahkan ke sistem yang lebih besar
+lagi tanpa menulis ulang aplikasinya.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        📱 Pertemuan 13: Teknologi Informasi dan
+Komunikasi untuk Sistem
+Informasi Manajemen
+
+                    </div>
+                    <div class="accordion-content">
+                      <h3> Pengertian Teknologi Informasi dan Komunikasi</h3>
+                      <p>Teknologi informasi dan komunikasi terdiri atas dua aspek, yaitu
+teknologi informasi dan teknologi komunikasi. Syam Muhtadi, mengatur
+informasi agar dapat ditelusuri kembali dengan mudah dan akurat.
+Adapun menurut Mahmun (2000: 2), teknologi komunikasi adalah
+teknologi yang berkaitan dengan cara menyampaikan data dan informasi.
+Menurut Martin (Zulfa, 2010: 3), teknologi informasi dan komunikasi,
+yaitu semua bentuk teknologi yang terlibat dalam pengumpulan,
+memanipulasi, komunikasi, presentasi, dan menggunakan data (data yang
+ditransformasi menjadi informasi).
+Berdasarkan dari beberapa definisi di atas, dapat disimpulkan bahwa
+teknologi informasi dan komunikasi adalah teknologi yang menggunakan
+komputer atau alat komunikasi lainnya untuk mengumpulkan, mengolah,
+dan menyampaikan atau mengirim informasi dengan mudah dan akurat</p>
+                        <h3>Teknologi Informasi dan Komunikasi dalam Sistem Informasi
+Manajemen</h3>
+<p>Perkembangan teknologi informasi dan komunikasi yang semakin
+canggih memberikan peluang bagi dunia pendidikan untuk terus
+meningkatkan kualitas serta mencapai tujuan pendidikan. Teknologi
+komunikasi dan informasi merupakan sarana yang dapat digunakan untuk
+mengumpulkan atau menyediakan informasi yang dibutuhkan organisasi
+dengan akurat dan tanpa menghabiskan banyak waktu sehingga lebih
+mempercepat kinerja organisasi. Adapun Sistem Informasi Manajemen
+(SIM) berguna bagi organisasi dalam menyediakan informasi-informasi
+yang dapat digunakan sebagai bahan pertimbangan oleh pimpinan dalam
+pengambilan keputusan.</p>
+                       <h3>Pemanfaatan Teknologi Informasi dan Komunikasi dalam Sistem
+Informasi Manajemen</h3>
+                          <p>Pemanfaatan teknologi informasi dan komunikasi dalam sistem
+informasi manajemen akan mendukung aliran informasi berjalan dengan
+cepat dan akurat. Kemudahan yang ada ini akan menyebabkan sistem
+informasi manajemen menjadi lebih efisien.
+Contoh adanya sistem informasi akademik (SIAKAD) online yang telah
+diterapkan di banyak perguruan tinggi sangat membantu manajer, orang
+tua, peserta didik, dan karyawan (dosen, TU, dan sebagainya) dalam
+mengakses informasi sehubungan dengan informasi yang dibutuhkan
+mengenai akademik. Manajer dapat mengambil keputusan berdasarkan
+SIAKAD, misalnya mengenai perkembangan rata-rata nilai mahasiswa.
+Ketika terjadi penurunan, manajer dapat mengevaluasi penyebabpenyebabnya sehingga ia dapat mengambil keputusan untuk memperbaiki kelemahan yang ada. Bagi orang tua, mereka dapat melihat
+perkembangan dan mendapatkan informasi mengenai kemajuan belajar
+anaknya setiap saat. Adapun peserta didik memperoleh kemudahan
+informasi mengenai perkuliahan, sedangkan bagi karyawan memudahkan
+pekerjaan mereka, baik dalam input nilai maupun penyimpanan data-data
+nilai.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        🎯 Pergembangan Sistem Informasi Manajemen
+                    </div>
+                    <div class="accordion-content">
+                        <h3> Definisi Pengembangan Sistem</h3>
+                        <p>Terdapat beberapa pendapat yang menjelaskan definisi pengembangan
+sistem, di antaranya sebagai berikut</p>
+                        <ul>
+                            <li>Pengembangan sistem merupakan suatu proyek yang harus melalui
+suatu proses pengevaluasian seperti pelaksanaan proyek lainnya
+(Amsa, 2008)</li>
+                            <li>Pengembangan sistem dapat berarti menyusun sistem yang baru
+untuk menggantikan sistem yang lama secara keseluruhan atau untuk
+mem-perbaiki sistem yang sudah ada (Kami, 2008).</li>
+                            <li>Pengembangan sistem adalah metode/prosedur/konsep/aturan yang
+digunakan untuk mengembangkan suatu sistem informasi atau
+pedoman bagaimana dan apa yang harus dikerjakan selama
+pengembangan sistem (algorithm). Metode adalah suatu cara, teknik
+sistematik untuk mengerjakan sesuatu (Dinu, 2008).</li>
+                        </ul>
+                        <h3>Hal-hal Mendasar dalam Pengembangan Sistem</h3>
+                        <p>Beberapa hal mendasar dalam pengembangan sistem antara lain:</p>
+                        <ul>
+                            <li>Analisis kebutuhan pengguna</li>
+                            <li>Perencanaan dan desain sistem</li>
+                            <li>Pengembangan dan implementasi sistem</li>
+                            <li>Pengujian dan evaluasi sistem</li>
+                        </ul>
+                        <h3>Prinsip Pengembangan Sistem informasi</h3>
+                        <p>prinsip pengembangan sistem informasi meliputi:</p>
+                        <ul>
+                            <li>Kejelasan tujuan dan manfaat sistem</li>
+                            <li>Penggunaan metode pengembangan yang sistematis</li>
+                            <li>Penglibatan stakeholder dalam proses pengembangan</li>
+                            <li>Penggunaan teknologi yang sesuai dengan kebutuhan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Sistem Informasi Manajemen | Dibuat untuk pembelajaran interaktif</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const isActive = content.classList.contains('active');
+            
+            // Tutup semua accordion
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.classList.remove('active');
+            });
+            
+            // Buka yang diklik jika sebelumnya tertutup
+            if (!isActive) {
+                content.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
